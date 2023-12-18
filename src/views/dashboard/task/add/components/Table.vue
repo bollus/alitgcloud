@@ -28,7 +28,7 @@
   const columns = getBasicColumns;
   const selectedRowKey = ref<Key[]>([]);
   const actionColumn = ref<BasicColumn>({
-    title: t('business.account.accountManage.table.operate'),
+    title: t('business.task.add.table.operate'),
     slots: { customRender: 'action' },
   });
   const data = [

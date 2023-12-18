@@ -34,7 +34,7 @@ const account: AppRouteModule = {
     {
       path: 'send',
       name: 'Send',
-      component: () => import('/@/views/dashboard/task/register/index.vue'),
+      component: () => import('/@/views/dashboard/task/send/index.vue'),
       meta: {
         icon: 'bi:send-fill',
         title: t('routes.dashboard.task.send'),
@@ -43,7 +43,7 @@ const account: AppRouteModule = {
     {
       path: 'invite',
       name: 'Invite',
-      component: () => import('/@/views/dashboard/task/register/index.vue'),
+      component: () => import('/@/views/dashboard/task/invite/index.vue'),
       meta: {
         icon: 'ant-design:user-outlined',
         title: t('routes.dashboard.task.invite'),
@@ -52,7 +52,7 @@ const account: AppRouteModule = {
     {
       path: 'speaker',
       name: 'Speaker',
-      component: () => import('/@/views/dashboard/task/register/index.vue'),
+      component: () => import('/@/views/dashboard/task/speaker/index.vue'),
       meta: {
         icon: 'material-symbols:sound-detection-loud-sound-outline-rounded',
         title: t('routes.dashboard.task.speaker'),
@@ -61,7 +61,7 @@ const account: AppRouteModule = {
     {
       path: 'script',
       name: 'Script',
-      component: () => import('/@/views/dashboard/task/register/index.vue'),
+      component: () => import('/@/views/dashboard/task/script/index.vue'),
       meta: {
         icon: 'material-symbols:time-auto-outline-rounded',
         title: t('routes.dashboard.task.script'),

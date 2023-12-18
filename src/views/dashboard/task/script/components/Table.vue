@@ -28,45 +28,31 @@
   const columns = getBasicColumns;
   const selectedRowKey = ref<Key[]>([]);
   const actionColumn = ref<BasicColumn>({
-    title: t('business.task.register.table.operate'),
+    title: t('business.task.script.table.operate'),
     slots: { customRender: 'action' },
   });
   const data = [
     {
       id: 1,
-      avatar: '头像',
-      country: '国家',
-      phone: '手机号',
-      username: '用户名',
-      nickname: '昵称',
-      friend: '好友',
-      group: '群',
-      accountGroup: '账号组',
-      online: '在线',
+      taskName: '任务名称',
+      group: '账号组',
+      type: '类型',
+      count: '总数',
+      success: '成功数',
+      failed: '失败数',
       status: '状态',
-      description: '描述',
-      socks5: 'Socks5代理',
-      customerService: '客服',
-      coordinates: '坐标',
       date: '日期',
       operate: '操作',
     },
     {
       id: 2,
-      avatar: '头像',
-      country: '国家',
-      phone: '手机号',
-      username: '用户名',
-      nickname: '昵称',
-      friend: '好友',
-      group: '群',
-      accountGroup: '账号组',
-      online: '在线',
+      taskName: '任务名称',
+      group: '账号组',
+      type: '类型',
+      count: '总数',
+      success: '成功数',
+      failed: '失败数',
       status: '状态',
-      description: '描述',
-      socks5: 'Socks5代理',
-      customerService: '客服',
-      coordinates: '坐标',
       date: '日期',
       operate: '操作',
     },
@@ -77,5 +63,4 @@
     selectedRowKey.value = selectedRowKeys;
   }
 </script>
-
 <style scoped lang="less"></style>
