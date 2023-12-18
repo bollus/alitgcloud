@@ -14,7 +14,9 @@
         <SelectOption value="finish">{{ t('business.task.register.search.finish') }}</SelectOption>
       </Select>
     </FormItem>
-    <Button type="submit"><SearchOutlined />{{ t('business.task.register.search.search') }}</Button>
+    <Button type="submit" class="mr-4"
+      ><SearchOutlined />{{ t('business.task.register.search.search') }}</Button
+    >
     <Button type="button">
       <Icon display="contents" icon="material-symbols:forms-add-on-rounded" />
       {{ t('business.task.register.search.insert') }}

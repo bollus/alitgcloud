@@ -18,7 +18,7 @@
         <SelectOption value="finish">{{ t('business.task.add.search.finish') }}</SelectOption>
       </Select>
     </FormItem>
-    <Button type="submit">
+    <Button type="submit" class="mr-4">
       <SearchOutlined />
       {{ t('business.task.add.search.search') }}
     </Button>
