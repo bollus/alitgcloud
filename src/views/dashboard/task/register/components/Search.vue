@@ -1,7 +1,11 @@
 <template>
   <Form layout="inline">
     <FormItem>
-      <Select style="width: 183px" :placeholder="t('business.task.register.search.status')">
+      <Select
+        v-model:status="status"
+        style="width: 183px"
+        :placeholder="t('business.task.register.search.status')"
+      >
         <SelectOption value="ready">{{ t('business.task.register.search.ready') }}</SelectOption>
         <SelectOption value="running">{{
           t('business.task.register.search.running')
@@ -23,8 +27,10 @@
   import { useI18n } from '/@/hooks/web/useI18n';
   import { SearchOutlined } from '@ant-design/icons-vue';
   import Icon from '/@/components/Icon/src/Icon.vue';
+  import { ref } from 'vue';
 
   const { t } = useI18n();
+  const status = ref('');
 </script>
 
 <style scoped lang="less"></style>

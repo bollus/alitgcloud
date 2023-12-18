@@ -37,10 +37,17 @@
       {{ t('business.account.archive.action.batchDelete') }}</Button
     >
     <span class="mr-2"
-      ><Select style="width: 183px" :placeholder="t('business.account.archive.action.country')"
+      ><Select
+        v-model:country="country"
+        style="width: 183px"
+        :placeholder="t('business.account.archive.action.country')"
     /></span>
     <span class="mr-2">
-      <Select style="width: 183px" :placeholder="t('business.account.archive.action.price')" />
+      <Select
+        v-model:price="price"
+        style="width: 183px"
+        :placeholder="t('business.account.archive.action.price')"
+      />
     </span>
     <Button size="small" class="mr-1" color="primary">
       <SearchOutlined />{{ t('business.account.archive.action.queryOld') }}</Button
@@ -61,8 +68,11 @@
   } from '@ant-design/icons-vue';
   import { Dropdown, Menu, MenuItem, Select } from 'ant-design-vue';
   import Icon from '/@/components/Icon/src/Icon.vue';
+  import { ref } from 'vue';
 
   const { t } = useI18n();
+  const country = ref('');
+  const price = ref('');
 </script>
 
 <style scoped lang="less"></style>

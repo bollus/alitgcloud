@@ -7,7 +7,11 @@
       />
     </FormItem>
     <FormItem>
-      <Select style="width: 183px" :placeholder="t('business.task.add.search.status')">
+      <Select
+        v-model:status="status"
+        style="width: 183px"
+        :placeholder="t('business.task.add.search.status')"
+      >
         <SelectOption value="ready">{{ t('business.task.add.search.ready') }}</SelectOption>
         <SelectOption value="running">{{ t('business.task.add.search.running') }}</SelectOption>
         <SelectOption value="stop">{{ t('business.task.add.search.stop') }}</SelectOption>
@@ -34,6 +38,7 @@
 
   const { t } = useI18n();
   const taskName = ref('');
+  const status = ref('');
 </script>
 
 <style scoped lang="less"></style>
