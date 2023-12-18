@@ -24,11 +24,11 @@
   const tabListTitle = [
     {
       key: 'tab1',
-      tab: '流量趋势',
+      tab: '转化率 (30日)',
     },
     {
       key: 'tab2',
-      tab: '访问量',
+      tab: '封禁比例',
     },
   ];
 

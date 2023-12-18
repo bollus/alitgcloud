@@ -44,6 +44,7 @@
         type: [String, Number] as PropType<string | number>,
         default: 16,
       },
+      display: propTypes.string,
       spin: propTypes.bool.def(false),
       prefix: propTypes.string.def(''),
     },
@@ -78,7 +79,7 @@
       };
 
       const getWrapStyle = computed((): CSSProperties => {
-        const { size, color } = props;
+        const { size, color, display } = props;
         let fs = size;
         if (isString(size)) {
           fs = parseInt(size, 10);
@@ -87,7 +88,7 @@
         return {
           fontSize: `${fs}px`,
           color: color,
-          display: 'inline-flex',
+          display: display || 'inline-flex',
         };
       });
 

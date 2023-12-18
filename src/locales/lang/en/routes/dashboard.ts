@@ -3,4 +3,17 @@ export default {
   about: 'About',
   workbench: 'Workbench',
   analysis: 'Analysis',
+  account: {
+    accounts: 'Accounts',
+    group: 'Groups',
+  },
+  task: {
+    task: 'Task management',
+    batchRegister: 'Batch register',
+    add: 'Add Friend/Group',
+    send: 'Batch send',
+    invite: 'Batch invite group',
+    speaker: 'Timed group sending',
+    script: 'Auto script',
+  },
 };
