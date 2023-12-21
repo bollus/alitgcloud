@@ -280,4 +280,47 @@ export default {
       },
     },
   },
+  data: {
+    proxy: {
+      proxyList: {
+        title: 'Proxy List',
+        search: {
+          group: 'Please select group',
+          search: 'Search',
+          insert: 'Insert',
+          import: 'Import',
+          export: 'Export',
+          purchase: 'Purchase',
+        },
+        table: {
+          port: 'Port',
+          username: 'Username',
+          password: 'Password',
+          control: 'Controls',
+          repeat: 'Repetitions',
+          risk: 'Risk ratio',
+          group: 'Group name',
+          status: 'Status',
+          date: 'Date',
+          operate: 'Operate',
+          batchDelete: 'Batch delete',
+        },
+      },
+      proxyGroup: {
+        title: 'Proxy group',
+        search: {
+          group: 'Group name',
+          groupInput: 'Please input group name',
+          search: 'Search',
+          insert: 'Insert',
+        },
+        table: {
+          group: 'Group name',
+          date: 'Date',
+          operate: 'Operate',
+          batchDelete: 'Batch delete',
+        },
+      },
+    },
+  },
 };

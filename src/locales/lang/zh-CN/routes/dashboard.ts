@@ -16,4 +16,8 @@ export default {
     speaker: '批量炒群',
     script: '自动话术',
   },
+  data: {
+    menuTitle: '数据管理',
+    proxy: 'Socks5管理',
+  },
 };

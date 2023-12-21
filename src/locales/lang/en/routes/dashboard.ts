@@ -16,4 +16,8 @@ export default {
     speaker: 'Timed group sending',
     script: 'Auto script',
   },
+  data: {
+    menuTitle: 'Data Manager',
+    proxy: 'Socks5 Manager',
+  },
 };

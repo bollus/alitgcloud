@@ -17,10 +17,10 @@
 </template>
 <script setup lang="ts">
   import { BasicColumn, BasicTable } from '/@/components/Table';
-  import { getBasicColumns } from './TableData';
   import { ColumnProps } from 'ant-design-vue/lib/table/interface';
   import { ref } from 'vue';
   import { useI18n } from '/@/hooks/web/useI18n';
+  import { getBasicColumns } from './TableData';
 
   type Key = ColumnProps['key'];
 
@@ -28,35 +28,17 @@
   const columns = getBasicColumns;
   const selectedRowKey = ref<Key[]>([]);
   const actionColumn = ref<BasicColumn>({
-    title: t('business.task.register.table.operate'),
+    title: t('business.data.proxy.proxyGroup.table.operate'),
     slots: { customRender: 'action' },
   });
   const data = [
     {
-      id: 1,
-      group: '账号组',
-      platform: '平台',
-      proxy: '自定义代理',
-      info: '自定义资料',
-      count: '总数',
-      success: '成功数',
-      failed: '失败数',
-      status: '状态',
+      group: '分组名称',
       date: '日期',
-      operate: '操作',
     },
     {
-      id: 2,
-      group: '账号组',
-      platform: '平台',
-      proxy: '自定义代理',
-      info: '自定义资料',
-      count: '总数',
-      success: '成功数',
-      failed: '失败数',
-      status: '状态',
+      group: '分组名称',
       date: '日期',
-      operate: '操作',
     },
   ];
 
@@ -65,5 +47,4 @@
     selectedRowKey.value = selectedRowKeys;
   }
 </script>
-
 <style scoped lang="less"></style>

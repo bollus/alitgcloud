@@ -3,7 +3,7 @@ import type { AppRouteModule } from '/@/router/types';
 import { LAYOUT } from '/@/router/constant';
 import { t } from '/@/hooks/web/useI18n';
 
-const account: AppRouteModule = {
+const task: AppRouteModule = {
   path: '/task',
   name: 'Task',
   component: LAYOUT,
@@ -70,4 +70,4 @@ const account: AppRouteModule = {
   ],
 };
 
-export default account;
+export default task;

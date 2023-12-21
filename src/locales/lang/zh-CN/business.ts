@@ -282,4 +282,47 @@ export default {
       },
     },
   },
+  data: {
+    proxy: {
+      proxyList: {
+        title: '代理列表',
+        search: {
+          group: '请选择分组',
+          search: '查询',
+          insert: '新增',
+          import: '导入',
+          export: '导出',
+          purchase: '购买',
+          batchDelete: '批量删除',
+        },
+        table: {
+          port: '端口',
+          username: '用户名',
+          password: '密码',
+          control: '控制数',
+          repeat: '重复数',
+          risk: '风险比',
+          group: '分组名称',
+          status: '状态',
+          date: '日期',
+          operate: '操作',
+        },
+      },
+      proxyGroup: {
+        title: '代理分组',
+        search: {
+          group: '分组名称',
+          groupInput: '请输入分组名称',
+          search: '查询',
+          insert: '新增',
+          batchDelete: '批量删除',
+        },
+        table: {
+          group: '分组名称',
+          date: '日期',
+          operate: '操作',
+        },
+      },
+    },
+  },
 };
