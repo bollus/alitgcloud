@@ -324,5 +324,65 @@ export default {
         },
       },
     },
+    phoneData: {
+      search: {
+        group: '分组名称',
+        groupInput: '请输入分组名称',
+        search: '查询',
+        insert: '新增',
+        purchase: '购买群链接',
+      },
+      table: {
+        group: '分组名称',
+        count: '数量',
+        remain: '余额',
+        format: '格式',
+        creator: '创建人',
+        date: '日期',
+        operate: '操作',
+      },
+    },
+    personal: {
+      group: {
+        title: '分组管理',
+        search: {
+          group: '分组名称',
+          groupInput: '请输入分组名称',
+          search: '查询',
+          insert: '新增',
+          batchDelete: '批量删除',
+        },
+        table: {
+          group: '分组名称',
+          date: '日期',
+          operate: '操作',
+        },
+      },
+      list: {
+        title: '资料列表',
+        search: {
+          content: '内容',
+          contentInput: '请输入内容',
+          group: '请选择分组',
+          search: '查询',
+          insert: '新增',
+          import: '导入',
+        },
+        table: {
+          content: '内容',
+          group: '分组',
+          date: '日期',
+          operate: '操作',
+        },
+      },
+    },
+    image: {
+      group: {
+        title: '图片分组',
+      },
+      library: {
+        title: '图片库',
+      },
+    },
   },
 };

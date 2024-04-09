@@ -19,5 +19,8 @@ export default {
   data: {
     menuTitle: 'Data Manager',
     proxy: 'Socks5 Manager',
+    phoneData: 'Phone Number Data',
+    personalData: 'Personal Data',
+    imageData: 'Image Data',
   },
 };

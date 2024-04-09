@@ -19,5 +19,8 @@ export default {
   data: {
     menuTitle: '数据管理',
     proxy: 'Socks5管理',
+    phoneData: '号码管理',
+    personalData: '资料列表',
+    imageData: '图片库',
   },
 };

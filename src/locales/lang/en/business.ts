@@ -322,5 +322,57 @@ export default {
         },
       },
     },
+    phoneData: {
+      search: {
+        group: 'Group name',
+        groupInput: 'Please input group name',
+        search: 'Search',
+        insert: 'Insert',
+        purchase: 'Purchase group link',
+      },
+      table: {
+        group: 'Group name',
+        count: 'Count',
+        remain: 'Remain',
+        format: 'Format',
+        creator: 'Creator',
+        date: 'Date',
+        operate: 'Operate',
+      },
+    },
+    personal: {
+      group: {
+        title: 'Group manage',
+        search: {
+          group: 'Group name',
+          groupInput: 'Please input group name',
+          search: 'Search',
+          insert: 'Insert',
+          batchDelete: 'Batch delete',
+        },
+        table: {
+          group: 'Group name',
+          date: 'Date',
+          operate: 'Operate',
+        },
+      },
+      list: {
+        title: 'Data list',
+        search: {
+          content: 'Content',
+          contentInput: 'Please input content',
+          group: 'Please select group',
+          search: 'Search',
+          insert: 'Insert',
+          import: 'Import',
+        },
+        table: {
+          content: 'Content',
+          group: 'Group',
+          date: 'Date',
+          operate: 'Operate',
+        },
+      },
+    },
   },
 };

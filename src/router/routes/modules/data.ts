@@ -23,6 +23,33 @@ const data: AppRouteModule = {
         title: t('routes.dashboard.data.proxy'),
       },
     },
+    {
+      path: 'number',
+      name: 'Number',
+      component: () => import('/@/views/dashboard/data/number/index.vue'),
+      meta: {
+        icon: 'heroicons:device-phone-mobile',
+        title: t('routes.dashboard.data.phoneData'),
+      },
+    },
+    {
+      path: 'personalData',
+      name: 'PersonalData',
+      component: () => import('/@/views/dashboard/data/personal/index.vue'),
+      meta: {
+        icon: 'mdi:briefcase-account-outline',
+        title: t('routes.dashboard.data.personalData'),
+      },
+    },
+    {
+      path: 'imageData',
+      name: 'ImageData',
+      component: () => import('/@/views/dashboard/data/image/index.vue'),
+      meta: {
+        icon: 'fluent:image-library-28-regular',
+        title: t('routes.dashboard.data.imageData'),
+      },
+    },
   ],
 };
 
